@@ -40,6 +40,8 @@
 "quadruped robot\inittask.o"
 "quadruped robot\maintask.o"
 "quadruped robot\bsp_imu.o"
+"quadruped robot\remote.o"
+"quadruped robot\legctrl.o"
 --library_type=microlib --strict --scatter "Quadruped Robot\Quadruped Robot.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
