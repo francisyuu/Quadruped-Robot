@@ -46,13 +46,13 @@ void StartInitTask(void const * argument)
 //	__HAL_TIM_SET_COMPARE(&htim12,TIM_CHANNEL_1,0);
 //		osDelay(180);
 		
-	osThreadDef(MainTask,StartMainTask,osPriorityHigh,0,2048);
+	osThreadDef(MainTask,StartMainTask,osPriorityHigh,0,1024);
 	MainHandle = osThreadCreate(osThread(MainTask),NULL);
 //	
 //	osThreadDef(MonitorTask,StartMonitorTask,osPriorityAboveNormal,0,1024);
 //	MonitorHandle = osThreadCreate(osThread(MonitorTask),NULL);
 //	
-	osThreadDef(ShowTask,StartShowTask,osPriorityNormal,0,512);
+	osThreadDef(ShowTask,StartShowTask,osPriorityNormal,0,1024);
 	MonitorHandle = osThreadCreate(osThread(ShowTask),NULL);
 	
 	osThreadTerminate(NULL);

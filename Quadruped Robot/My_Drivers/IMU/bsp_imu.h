@@ -32,9 +32,9 @@ typedef struct
 	float gy;
 	float gz;
 	
-	int16_t ax_offset;
-	int16_t ay_offset;
-	int16_t az_offset;
+	int32_t ax_offset;
+	int32_t ay_offset;
+	int32_t az_offset;
 
 	float gx_offset;
 	float gy_offset;
@@ -46,6 +46,10 @@ typedef struct
 	int16_t ax;
 	int16_t ay;
 	int16_t az;
+	
+	float ax_uni;//ax_unitized
+	float ay_uni;
+	float az_uni;
 
 	int16_t mx;
 	int16_t my;

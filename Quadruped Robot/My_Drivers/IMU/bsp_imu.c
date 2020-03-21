@@ -13,12 +13,15 @@
 * @brief        
 * @details  bsp improvement 
 * @author   FreakYu
-* @date    2020.3.4 
-* @version V1.1
+* @date    2020.3.21
+* @version V1.3
 * @par Copyright (c):      
 * @par log
 					2020.3.4	Fixed the bug that Y-axis offset is always 0 (DJI programmer did not change it to y after copying x, awesome)
-					2020.3.5	change offset data and gyro data from int16_t to float，which make the attitude of the final solution more stable
+					2020.3.5	change offset data and gyro data from int16_t to float,which make the attitude of the final solution more stable
+					2020.3.21	Fixed the problem of aoffset overflow, and made it work normally. 
+										The default z-axis is down, and the measuring range is 8g.
+										Added a_unitized,and its unit is |a|
 						
 ******************************************************************************
 */ 
@@ -307,10 +310,10 @@ void mpu_get_data()
 {
     mpu_read_bytes(MPU6500_ACCEL_XOUT_H, mpu_buff, 14);
 
-    mpu_data.ax   = mpu_buff[0] << 8 | mpu_buff[1];
-    mpu_data.ay   = mpu_buff[2] << 8 | mpu_buff[3];
-    mpu_data.az   = mpu_buff[4] << 8 | mpu_buff[5];
-    mpu_data.temp = mpu_buff[6] << 8 | mpu_buff[7];
+    mpu_data.ax   = (int16_t)(mpu_buff[0] << 8 | mpu_buff[1])- mpu_data.ax_offset;
+    mpu_data.ay   = (int16_t)(mpu_buff[2] << 8 | mpu_buff[3])- mpu_data.ay_offset;
+    mpu_data.az   = (int16_t)(mpu_buff[4] << 8 | mpu_buff[5])- mpu_data.az_offset;
+    mpu_data.temp = (int16_t)(mpu_buff[6] << 8 | mpu_buff[7]);
 
     mpu_data.gx = ((int16_t)(mpu_buff[8]  << 8 | mpu_buff[9])  - mpu_data.gx_offset);
     mpu_data.gy = ((int16_t)(mpu_buff[10] << 8 | mpu_buff[11]) - mpu_data.gy_offset);
@@ -326,6 +329,11 @@ void mpu_get_data()
 	  imu.wx   = mpu_data.gx / 16.384f / 57.3f; 
     imu.wy   = mpu_data.gy / 16.384f / 57.3f; 
     imu.wz   = mpu_data.gz / 16.384f / 57.3f;
+		
+		float p_unitized=sqrt(imu.ax*imu.ax+imu.ay*imu.ay+imu.az*imu.az);
+		imu.ax_uni=imu.ax/p_unitized;
+		imu.ay_uni=imu.ay/p_unitized;
+		imu.az_uni=imu.az/p_unitized;
 }
 
 
@@ -400,9 +408,9 @@ void mpu_offset_call(void)
 	for (i=0; i<OFFSET_SAMPLE_NUM;i++)
 	{
 		mpu_read_bytes(MPU6500_ACCEL_XOUT_H, mpu_buff, 14);
-		mpu_data.ax_offset += mpu_buff[0] << 8 | mpu_buff[1];
-		mpu_data.ay_offset += mpu_buff[2] << 8 | mpu_buff[3];
-		mpu_data.az_offset += mpu_buff[4] << 8 | mpu_buff[5];
+		mpu_data.ax_offset += (int16_t)(mpu_buff[0] << 8 | mpu_buff[1]);
+		mpu_data.ay_offset += (int16_t)(mpu_buff[2] << 8 | mpu_buff[3]);
+		mpu_data.az_offset += (int16_t)(mpu_buff[4] << 8 | mpu_buff[5])-4096;//默认z轴垂直地面，默认8g，则1g为32768/8=4096
 	
 		mpu_data.gx_offset += (int16_t)(mpu_buff[8] << 8 | mpu_buff[9]);
 		mpu_data.gy_offset += (int16_t)(mpu_buff[10] << 8 | mpu_buff[11]);

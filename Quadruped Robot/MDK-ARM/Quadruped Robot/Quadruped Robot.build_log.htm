@@ -28,10 +28,27 @@ Project File Date:  03/18/2020
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\D\software\MDK5\ARM\ARMCC\Bin'
 Build target 'Quadruped Robot'
 compiling legctrl.c...
+..\My_Drivers\Remote\legctrl.h(30): warning:  #1295-D: Deprecated declaration PID_cal - give arg types
+  void PID_cal();
+..\My_Drivers\Remote\legctrl.c(317): warning:  #177-D: variable "theta" was declared but never referenced
+  	static float theta,//转??
+..\My_Drivers\Remote\legctrl.c(318): warning:  #177-D: variable "ctheta" was declared but never referenced
+  				ctheta,//cos(theta)
+..\My_Drivers\Remote\legctrl.c(319): warning:  #177-D: variable "stheta" was declared but never referenced
+  				stheta,//sin(theta)
+..\My_Drivers\Remote\legctrl.c(320): warning:  #177-D: variable "c" was declared but never referenced
+  				c[3],//转??
+..\My_Drivers\Remote\legctrl.c(321): warning:  #177-D: variable "c_uni" was declared but never referenced
+  				c_uni,//转?岬?位化?屑浔?量
+..\My_Drivers\Remote\legctrl.c(322): warning:  #177-D: variable "omega" was declared but never referenced
+  				omega[3],//转?岱??虻牡?位??量
+..\My_Drivers\Remote\legctrl.c(382): warning:  #1-D: last line of file ends without a newline
+  	
+..\My_Drivers\Remote\legctrl.c: 8 warnings, 0 errors
 linking...
-Program Size: Code=34952 RO-data=1292 RW-data=300 ZI-data=17844  
+Program Size: Code=37276 RO-data=1384 RW-data=300 ZI-data=18084  
 FromELF: creating hex file...
-"Quadruped Robot\Quadruped Robot.axf" - 0 Error(s), 0 Warning(s).
+"Quadruped Robot\Quadruped Robot.axf" - 0 Error(s), 8 Warning(s).
 
 <h2>Software Packages used:</h2>
 
