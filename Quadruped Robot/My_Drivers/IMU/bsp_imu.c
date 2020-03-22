@@ -31,6 +31,10 @@
 #include <math.h>
 #include "mpu6500_reg.h"
 #include "spi.h"
+/**********usr**********/
+#include "filter.h"
+kalman_filter kalman_ax,kalman_ay;
+/**********usr**********/
 
 #define BOARD_DOWN (1)   
 #define IST8310
@@ -334,6 +338,28 @@ void mpu_get_data()
 		imu.ax_uni=imu.ax/p_unitized;
 		imu.ay_uni=imu.ay/p_unitized;
 		imu.az_uni=imu.az/p_unitized;
+		
+		/**********usr**********/
+		imu.ax_kalman=Kalman(&kalman_ax,imu.ax);
+		imu.ay_kalman=Kalman(&kalman_ay,imu.ay);
+		if(imu.ax_kalman>400|imu.ax_kalman<-400)
+		{
+			if(imu.speedx.flag==0)
+			{
+				imu.speedx.flag=1;
+				imu.speedx.v=0;
+			}
+			imu.speedx.v+=(imu.ax_kalman-imu.speedx.aoffset)/4096*9.8*(HAL_GetTick()-imu.speedx.last_tick);
+			imu.speedx.last_tick=HAL_GetTick();
+		}
+		else
+		{
+			imu.speedx.aoffset=imu.ax_kalman;
+			imu.speedx.flag=0;
+			imu.speedx.last_tick=HAL_GetTick();
+			
+		}
+		/**********usr**********/
 }
 
 
