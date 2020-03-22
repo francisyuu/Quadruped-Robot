@@ -68,6 +68,27 @@ typedef struct
 	float rol;
 	float pit;
 	float yaw;
+	
+/**********usr**********/
+  float ax_kalman;
+	float ay_kalman;
+	float az_kalman;
+	
+	struct 
+	{
+		uint32_t last_tick;
+		uint8_t flag;//³å»÷Ë²¼äÎª1
+		float v;
+		float aoffset;
+	}speedx;
+	struct 
+	{
+		uint32_t last_tick;
+		uint8_t flag;
+		float v;
+		float aoffset;
+	}speedy;
+/**********usr**********/
 } imu_t;
 
 extern mpu_data_t mpu_data;
