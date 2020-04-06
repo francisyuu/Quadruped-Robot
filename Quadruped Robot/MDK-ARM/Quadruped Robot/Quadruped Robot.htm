@@ -3,7 +3,11 @@
 <title>Static Call Graph - [Quadruped Robot\Quadruped Robot.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image Quadruped Robot\Quadruped Robot.axf</H1><HR>
+<<<<<<< HEAD
 <BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Thu Mar 26 20:46:08 2020
+=======
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Sun Mar 22 23:17:46 2020
+>>>>>>> bb68a75e017170df442e46922e2fba63be839d88
 <BR><P>
 <H3>Maximum Stack Usage =        400 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -715,9 +719,15 @@ Global Symbols
 <P><STRONG><a name="[8a]"></a>DBUS_IT</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, dbus.o(i.DBUS_IT))
 <BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = DBUS_IT &rArr; HAL_UART_Receive_DMA &rArr; HAL_DMA_Start_IT &rArr; DMA_SetConfig
 </UL>
+<<<<<<< HEAD
 <BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGiveFromISR
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Receive_DMA
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_DMAStop
+=======
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Receive_DMA
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_DMAStop
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGiveFromISR
+>>>>>>> bb68a75e017170df442e46922e2fba63be839d88
 </UL>
 <BR>[Called By]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
 </UL>
@@ -726,10 +736,17 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 192<LI>Call Chain = DBUS_Init &rArr; osThreadCreate &rArr; xTaskCreate &rArr; pvPortMalloc &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
 </UL>
 <BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osThreadCreate
+<<<<<<< HEAD
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
 <LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericCreate
 <LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Receive_DMA
+=======
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Receive_DMA
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericCreate
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+>>>>>>> bb68a75e017170df442e46922e2fba63be839d88
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartInitTask
 </UL>
@@ -1390,12 +1407,19 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osThreadCreate
 <LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<<<<<<< HEAD
+=======
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Start
+>>>>>>> bb68a75e017170df442e46922e2fba63be839d88
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;robot_init
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IMU_INIT
 <LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DBUS_Init
 <LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osThreadTerminate
 <LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<<<<<<< HEAD
 <LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Start
+=======
+>>>>>>> bb68a75e017170df442e46922e2fba63be839d88
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> freertos.o(.constdata)
 </UL>
@@ -2157,8 +2181,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_asin
 </UL>
 
+<<<<<<< HEAD
 <P><STRONG><a name="[f8]"></a>trot</STRONG> (Thumb, 3014 bytes, Stack size 96 bytes, legctrl.o(i.trot))
 <BR><BR>[Stack]<UL><LI>Max Depth = 336<LI>Call Chain = trot &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
+=======
+<P><STRONG><a name="[f8]"></a>trot</STRONG> (Thumb, 2998 bytes, Stack size 104 bytes, legctrl.o(i.trot))
+<BR><BR>[Stack]<UL><LI>Max Depth = 344<LI>Call Chain = trot &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
+>>>>>>> bb68a75e017170df442e46922e2fba63be839d88
 </UL>
 <BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
@@ -2804,7 +2833,11 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Mode_Ctrl
 </UL>
 
+<<<<<<< HEAD
 <P><STRONG><a name="[ea]"></a>Trot_Mode</STRONG> (Thumb, 108 bytes, Stack size 8 bytes, remote.o(i.Trot_Mode))
+=======
+<P><STRONG><a name="[ea]"></a>Trot_Mode</STRONG> (Thumb, 116 bytes, Stack size 8 bytes, remote.o(i.Trot_Mode))
+>>>>>>> bb68a75e017170df442e46922e2fba63be839d88
 <BR><BR>[Stack]<UL><LI>Max Depth = 376<LI>Call Chain = Trot_Mode &rArr; robot_run &rArr; inverse_kinematics &rArr; __hardfp_tan &rArr; __kernel_tan &rArr; __kernel_poly &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;trot

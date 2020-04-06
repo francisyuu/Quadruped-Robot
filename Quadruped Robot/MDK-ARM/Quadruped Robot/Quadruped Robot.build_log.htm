@@ -27,6 +27,7 @@ Project File Date:  03/21/2020
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\D\software\MDK5\ARM\ARMCC\Bin'
 Build target 'Quadruped Robot'
+<<<<<<< HEAD
 compiling remote.c...
 ..\My_Drivers\Remote\remote.h(5): warning:  #1295-D: Deprecated declaration Remote_Handle - give arg types
   uint8_t Remote_Handle();
@@ -39,6 +40,18 @@ linking...
 Program Size: Code=36504 RO-data=1388 RW-data=300 ZI-data=18132  
 FromELF: creating hex file...
 "Quadruped Robot\Quadruped Robot.axf" - 0 Error(s), 3 Warning(s).
+=======
+compiling legctrl.c...
+..\My_Drivers\Remote\legctrl.h(29): warning:  #1295-D: Deprecated declaration PID_cal - give arg types
+  void PID_cal();
+..\My_Drivers\Remote\legctrl.c(485): warning:  #1-D: last line of file ends without a newline
+  	
+..\My_Drivers\Remote\legctrl.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=36472 RO-data=1388 RW-data=300 ZI-data=18132  
+FromELF: creating hex file...
+"Quadruped Robot\Quadruped Robot.axf" - 0 Error(s), 2 Warning(s).
+>>>>>>> bb68a75e017170df442e46922e2fba63be839d88
 
 <h2>Software Packages used:</h2>
 

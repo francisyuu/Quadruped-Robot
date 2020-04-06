@@ -1132,7 +1132,11 @@ I (D:\D\software\MDK5\ARM\ARMCC\include\stdbool.h)(0x569DEA3A)
 I (D:\D\software\MDK5\ARM\ARMCC\include\stdlib.h)(0x569DEA3A)
 I (D:\D\software\MDK5\ARM\ARMCC\include\string.h)(0x569DEA3A)
 I (..\My_Drivers\Remote\legctrl.h)(0x5E7773F0)
+<<<<<<< HEAD
 I (..\My_Drivers\Remote\basic_parameter.h)(0x5E7CA0AC)
+=======
+I (..\My_Drivers\Remote\basic_parameter.h)(0x5E776FD1)
+>>>>>>> bb68a75e017170df442e46922e2fba63be839d88
 F (..\My_Drivers\Tasks\MainTask.c)(0x5E770C1A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I ..\My_Drivers\DBUS -I ..\My_Drivers\IMU -I ..\My_Drivers\Tasks -I ..\My_Drivers\Remote-I "D:\D\exercises\mcu\stm32\cube project\Quadruped Robot\CubeProject\Quadruped Robot\MDK-ARM\RTE"-I D:\D\software\MDK5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-I D:\D\software\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx-o "quadruped robot\maintask.o" --omf_browse "quadruped robot\maintask.crf" --depend "quadruped robot\maintask.d")
 I (..\My_Drivers\Tasks\MainTask.h)(0x5C8535F7)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5E5F1FF2)
@@ -1190,7 +1194,11 @@ I (D:\D\software\MDK5\ARM\ARMCC\include\stdbool.h)(0x569DEA3A)
 I (D:\D\software\MDK5\ARM\ARMCC\include\stdlib.h)(0x569DEA3A)
 I (D:\D\software\MDK5\ARM\ARMCC\include\string.h)(0x569DEA3A)
 I (..\My_Drivers\Remote\legctrl.h)(0x5E7773F0)
+<<<<<<< HEAD
 I (..\My_Drivers\Remote\basic_parameter.h)(0x5E7CA0AC)
+=======
+I (..\My_Drivers\Remote\basic_parameter.h)(0x5E776FD1)
+>>>>>>> bb68a75e017170df442e46922e2fba63be839d88
 I (..\My_Drivers\Remote\remote.h)(0x5C0B31D2)
 F (..\My_Drivers\IMU\bsp_imu.c)(0x5E771DDD)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I ..\My_Drivers\DBUS -I ..\My_Drivers\IMU -I ..\My_Drivers\Tasks -I ..\My_Drivers\Remote-I "D:\D\exercises\mcu\stm32\cube project\Quadruped Robot\CubeProject\Quadruped Robot\MDK-ARM\RTE"-I D:\D\software\MDK5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-I D:\D\software\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx-o "quadruped robot\bsp_imu.o" --omf_browse "quadruped robot\bsp_imu.crf" --depend "quadruped robot\bsp_imu.d")
 I (..\My_Drivers\IMU\bsp_imu.h)(0x5E771DCB)
@@ -1235,7 +1243,11 @@ I (D:\D\software\MDK5\ARM\ARMCC\include\math.h)(0x569DEA3A)
 I (..\My_Drivers\IMU\mpu6500_reg.h)(0x5ACEDEBC)
 I (../Inc/spi.h)(0x5E609284)
 I (..\My_Drivers\IMU\filter.h)(0x5C95A427)
+<<<<<<< HEAD
 F (..\My_Drivers\Remote\remote.c)(0x5E7CA40D)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I ..\My_Drivers\DBUS -I ..\My_Drivers\IMU -I ..\My_Drivers\Tasks -I ..\My_Drivers\Remote-I "D:\D\exercises\mcu\stm32\cube project\Quadruped Robot\CubeProject\Quadruped Robot\MDK-ARM\RTE"-I D:\D\software\MDK5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-I D:\D\software\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx-o "quadruped robot\remote.o" --omf_browse "quadruped robot\remote.crf" --depend "quadruped robot\remote.d")
+=======
+F (..\My_Drivers\Remote\remote.c)(0x5E7776D8)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I ..\My_Drivers\DBUS -I ..\My_Drivers\IMU -I ..\My_Drivers\Tasks -I ..\My_Drivers\Remote-I "D:\D\exercises\mcu\stm32\cube project\Quadruped Robot\CubeProject\Quadruped Robot\MDK-ARM\RTE"-I D:\D\software\MDK5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-I D:\D\software\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx-o "quadruped robot\remote.o" --omf_browse "quadruped robot\remote.crf" --depend "quadruped robot\remote.d")
+>>>>>>> bb68a75e017170df442e46922e2fba63be839d88
 I (..\My_Drivers\Remote\remote.h)(0x5C0B31D2)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5E5F1FEC)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5E609285)
@@ -1271,8 +1283,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5E5F1FEC)
 I (..\My_Drivers\DBUS\DBUS.h)(0x5E5F27D1)
 I (..\My_Drivers\Remote\legctrl.h)(0x5E7773F0)
 I (../Inc/tim.h)(0x5E609285)
+<<<<<<< HEAD
 I (..\My_Drivers\Remote\basic_parameter.h)(0x5E7CA0AC)
 F (..\My_Drivers\Remote\legctrl.c)(0x5E7C88A5)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I ..\My_Drivers\DBUS -I ..\My_Drivers\IMU -I ..\My_Drivers\Tasks -I ..\My_Drivers\Remote-I "D:\D\exercises\mcu\stm32\cube project\Quadruped Robot\CubeProject\Quadruped Robot\MDK-ARM\RTE"-I D:\D\software\MDK5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-I D:\D\software\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx-o "quadruped robot\legctrl.o" --omf_browse "quadruped robot\legctrl.crf" --depend "quadruped robot\legctrl.d")
+=======
+I (..\My_Drivers\Remote\basic_parameter.h)(0x5E776FD1)
+F (..\My_Drivers\Remote\legctrl.c)(0x5E778196)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I ..\My_Drivers\DBUS -I ..\My_Drivers\IMU -I ..\My_Drivers\Tasks -I ..\My_Drivers\Remote-I "D:\D\exercises\mcu\stm32\cube project\Quadruped Robot\CubeProject\Quadruped Robot\MDK-ARM\RTE"-I D:\D\software\MDK5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-I D:\D\software\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx-o "quadruped robot\legctrl.o" --omf_browse "quadruped robot\legctrl.crf" --depend "quadruped robot\legctrl.d")
+>>>>>>> bb68a75e017170df442e46922e2fba63be839d88
 I (..\My_Drivers\Remote\legctrl.h)(0x5E7773F0)
 I (../Inc/tim.h)(0x5E609285)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5E5F1FEC)
@@ -1306,7 +1323,11 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5E5F1FEC)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5E5F1FEC)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5E5F1FEC)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5E5F1FEC)
+<<<<<<< HEAD
 I (..\My_Drivers\Remote\basic_parameter.h)(0x5E7CA0AC)
+=======
+I (..\My_Drivers\Remote\basic_parameter.h)(0x5E776FD1)
+>>>>>>> bb68a75e017170df442e46922e2fba63be839d88
 I (D:\D\software\MDK5\ARM\ARMCC\include\math.h)(0x569DEA3A)
 I (..\My_Drivers\IMU\bsp_imu.h)(0x5E771DCB)
 I (..\My_Drivers\IMU\mytype.h)(0x5ACEDEBC)
