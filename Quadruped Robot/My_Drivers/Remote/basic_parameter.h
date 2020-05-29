@@ -40,12 +40,12 @@
 
 #define bodyheight 0.2f //肩高 m 如果修改了这个变量 要记得同时修改k_midpar
 #define k_midpar 7.0f					//中间变量，(g/h)^0.5 
-#define Tsupport 0.2f	//支撑相周期 s
+#define Tsupport 0.3f	//支撑相周期 s
 #define Timpend 0.2f 	//浮空相周期 s
 #define kcycloid 1.0f 	//摆线系数 
 #define x_offset_Robot 0 	//重心偏移量
-#define y_offset_Robot 0
-#define z_offset_Robot -17
+#define y_offset_Robot -6
+#define z_offset_Robot -35
 
 #define Trot_Mode_PAR 0
 #define Balance_Mode_PAR 1

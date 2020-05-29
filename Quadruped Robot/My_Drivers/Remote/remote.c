@@ -76,7 +76,7 @@ static void Trot_Mode(uint8_t type)//
 				}
 				
 				trot(legs,RC_Ctl.rc0.ch3,RC_Ctl.rc0.ch2,RC_Ctl.rc0.ch0);
-//				balance(legs,ROL_PID.output,PIT_PID.output,0);
+				//balance(legs,ROL_PID.output,PIT_PID.output,0);
 				robot_run(legs);
         break;
     case ENDING:

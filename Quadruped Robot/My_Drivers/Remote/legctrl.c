@@ -2,7 +2,7 @@
 #include "math.h"
 #include "bsp_imu.h"
 
-int STEER_OFFSET[12] = {1325,1175,1695,1430,1485,1360,1525,1900,1500,1750,1175,1525};
+int STEER_OFFSET[12] = {1300,1220,1715,1395,1485,1400,1485,1920,1500,1750,1175,1525};
 leg_t legs[4];
 PID PIT_PID,ROL_PID,SPEED_Y_PID,SPEED_Z_PID;
 
@@ -408,17 +408,17 @@ void PIT_ROL_PID_Set(uint8_t mode)
 			PIT_PID.I=0;
 			PIT_PID.D=0;
 			PIT_PID.Iout=0;
-			PIT_PID.PIDMax=45;
-			PIT_PID.IMax=45;
-			PIT_PID.I_Limited=45;
+			PIT_PID.PIDMax=0;
+			PIT_PID.IMax=0;
+			PIT_PID.I_Limited=0;
 
 			ROL_PID.P=0;
 			ROL_PID.I=0;
 			ROL_PID.D=0;
 			ROL_PID.Iout=0;
-			ROL_PID.PIDMax=45;
-			ROL_PID.IMax=45;
-			ROL_PID.I_Limited=45;
+			ROL_PID.PIDMax=0;
+			ROL_PID.IMax=0;
+			ROL_PID.I_Limited=0;
 			break;
 		case Balance_Mode_PAR:
 			PIT_PID.P=2;
